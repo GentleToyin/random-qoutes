@@ -4,10 +4,8 @@ import { Qoutes } from './qoutes';
 import quotationLeft from '../img/quotation-marks-left.svg';
 import quotationRight from '../img/quotation-marks-right.svg'
 
-export const GenerateQoutes = () => {
-
-    let randIndex = Math.floor(Math.random() * (((49 - 1) + 1) + 1))
-    let newQoute = Qoutes[randIndex]
+export const GenerateQoutes = (props) => {
+    let newQoute = Qoutes[props.index]
     return (
 
         <div>
